@@ -35,6 +35,8 @@ sudo ./splunk start
 
 ![image](https://github.com/user-attachments/assets/9cd73fa8-dca5-4a73-865a-7e068b52eb4e)
 
+## Adding sample datasets (Boss of the SOC (BOTS) Dataset Version 3)
+
 https://github.com/splunk/botsv3?tab=readme-ov-file
 
 
@@ -52,3 +54,21 @@ https://github.com/splunk/botsv3?tab=readme-ov-file
 
 
 ![image](https://github.com/user-attachments/assets/fcd56231-c696-42ec-acab-285a100183b3)
+
+## preferences
+
+![image](https://github.com/user-attachments/assets/6ac30c87-01bd-4ec9-9057-50488b110f03)
+![image](https://github.com/user-attachments/assets/02ae534d-7556-4515-ab88-7397fdde83d5)
+
+
+## forward data to Splunk Enterprise
+
+1. Configure receiving on a Splunk Enterprise instance or cluster.
+
+2. 
+Download and install the universal forwarder.
+Start the universal forwarder and accept the license agreement. Some installers do this for you.
+(Optional) Change the credentials on the universal forwarder from their defaults.
+Configure the universal forwarder to send data to the Splunk Enterprise instance.
+(Optional) Configure the universal forwarder to act as a deployment client.
+Configure the universal forwarder to collect data from the host it is on.
