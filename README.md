@@ -129,3 +129,8 @@ Checking
 
 ![image](https://github.com/user-attachments/assets/d9297899-575b-48fa-b080-2d16dc3424f7)
 
+![image](https://github.com/user-attachments/assets/2a7b7f66-9083-4c72-a730-d2f3c8698988)
+host="hostname"
+
+![image](https://github.com/user-attachments/assets/2d1f36db-ade9-4c06-b634-6d90521068d4)
+
