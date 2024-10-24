@@ -122,3 +122,10 @@ https://linuxconfig.org/redhat-8-open-and-close-ports
 
 ![image](https://github.com/user-attachments/assets/a62854c1-bbbe-48d7-b0a4-f80e76fba628)
 
+
+Checking
+
+![image](https://github.com/user-attachments/assets/35a9151f-78f7-47d8-a741-2986f6b89a28)
+
+![image](https://github.com/user-attachments/assets/d9297899-575b-48fa-b080-2d16dc3424f7)
+
