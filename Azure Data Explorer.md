@@ -14,3 +14,4 @@ https://github.com/Azure/Azure-Sentinel/tree/master/Sample%20Data
 
 ![image](https://github.com/user-attachments/assets/29cf4b2b-2420-48b8-9860-d4134c8ab31c)
 
+![image](https://github.com/user-attachments/assets/dea4995c-d644-4814-9974-4ad8df0c73df)
