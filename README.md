@@ -109,3 +109,4 @@ We will use Splunk Enterprise for the setup, a widely recognized and trusted SIE
 ## Lab Exercises
 
 - [Setting Up a Universal Forwarder to Send Logs to Splunk](https://github.com/mmhgwyjs/detection-lab/blob/main/Lab%20Exercises/Setting%20Up%20a%20Universal%20Forwarder%20to%20Send%20Logs%20to%20Splunk.md)
+- [Azure Data Explorer Setup](https://github.com/mmhgwyjs/detection-lab/blob/main/Lab%20Exercises/Azure%20Data%20Explorer%20Setup.md)
