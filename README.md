@@ -66,30 +66,43 @@ We will use Splunk Enterprise for the setup, a widely recognized and trusted SIE
 
   ![image](https://github.com/user-attachments/assets/9cd73fa8-dca5-4a73-865a-7e068b52eb4e)
 
-## Adding sample datasets (Boss of the SOC (BOTS) Dataset Version 3)
+## Addtional Configurations
 
-https://github.com/splunk/botsv3?tab=readme-ov-file
+### Adding Sample Datasets (Boss of the SOC - BOTS Dataset Version 3) - Optional
 
+- Download the dataset from the following link:  
+  [BOTS Dataset Version 3](https://github.com/splunk/botsv3?tab=readme-ov-file)  
 
-![image](https://github.com/user-attachments/assets/83fd0539-0c01-4398-99bc-6ff32c08db71)
+- Copy the downloaded file to the directory `/opt/splunk/etc/apps/`:  
+  ```  
+  cp botsv3_data_set.tgz /opt/splunk/etc/apps/
+  ```  
 
+- Extract the dataset:  
+  ```  
+  sudo tar -xvzf /opt/splunk/etc/apps/botsv3_data_set.tgz
+  ```
+  ![image](https://github.com/user-attachments/assets/c98147eb-95ef-4347-bb10-cd3286c3b84f)
 
-![image](https://github.com/user-attachments/assets/c98147eb-95ef-4347-bb10-cd3286c3b84f)
+- Restart the Splunk service to apply the changes:  
+  ```  
+  sudo /opt/splunk/bin/splunk restart
+  ```  
+- In the Splunk console, use the following search query to confirm the logs:  
+  ```  
+  index=botsv3
+  ```
+  ![image](https://github.com/user-attachments/assets/fcd56231-c696-42ec-acab-285a100183b3)
 
+### Setting up Preferences
 
-![image](https://github.com/user-attachments/assets/896c5f04-72e3-442e-bef3-a2badf6df304)
+- This is optional, but it is recommended to change the time zone to UTC or GMT.
 
-[splnk@localhost /]$ cd /opt/splunk/bin/
-[splnk@localhost bin]$ sudo ./splunk stop
+  ![image](https://github.com/user-attachments/assets/3f840738-1a96-4e60-aa55-f85f02c96cee)
 
+  ![image](https://github.com/user-attachments/assets/6ac30c87-01bd-4ec9-9057-50488b110f03)
 
-
-![image](https://github.com/user-attachments/assets/fcd56231-c696-42ec-acab-285a100183b3)
-
-## preferences
-
-![image](https://github.com/user-attachments/assets/6ac30c87-01bd-4ec9-9057-50488b110f03)
-![image](https://github.com/user-attachments/assets/02ae534d-7556-4515-ab88-7397fdde83d5)
+  ![image](https://github.com/user-attachments/assets/02ae534d-7556-4515-ab88-7397fdde83d5)
 
 
 ## forward data to Splunk Enterprise
