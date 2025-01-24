@@ -13,7 +13,7 @@ We will use Splunk Enterprise for the setup, a widely recognized and trusted SIE
 ***1. Setting up the server for Splunk installation.***
    
 - Choose your preferred operating system and follow the respective guide to spin up a machine:
-   - For Windows, refer to the W[indows setup guide.](https://github.com/mmhgwyjs/windows-lab)
+   - For Windows, refer to the [Windows setup guide.](https://github.com/mmhgwyjs/windows-lab)
    - For Linux, refer to the [Linux setup guide](https://github.com/mmhgwyjs/linux-lab).
 
 ***2. Downloading the Splunk installer.***
