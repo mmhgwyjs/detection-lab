@@ -1,3 +1,5 @@
+We can use this environment to practice KQL for free. 
+
 ![image](https://github.com/user-attachments/assets/c7142f4f-ca1f-4de8-b4bd-d8715b59e41d)
 
 https://dataexplorer.azure.com/home
