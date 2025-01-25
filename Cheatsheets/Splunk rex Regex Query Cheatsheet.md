@@ -1,0 +1,18 @@
+# **Splunk rex Regex Query Cheatsheet**
+
+| **Use Case**                        | **Regex Query**                                                                                      | **Description**                                                                                           |
+|-------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Extract Key-Value Pairs**         | `rex field=form_data "passwd=(?<password>\w+)"`                                                     | Captures the value of `passwd=` into the `password` field.                                                |
+| **Extract Email Addresses**         | `rex field=_raw "(?<email>\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z\|a-z]{2,}\b)"`                     | Extracts valid email addresses into the `email` field.                                                    |
+| **Extract IP Addresses**            | `rex field=_raw "(?<ip>\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b)"`                                    | Captures IPv4 addresses into the `ip` field.                                                              |
+| **Extract URLs**                    | `rex field=_raw "(?<url>https?://[^\s]+)"`                                                          | Extracts full URLs starting with `http://` or `https://` into the `url` field.                            |
+| **Extract Status Codes**            | `rex field=_raw "(?<status>\d{3})"`                                                                 | Captures the first 3-digit number (e.g., HTTP status codes) into the `status` field.                      |
+| **Match Timestamps**                | `rex field=_raw "(?<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"`                                | Captures timestamps in the format `YYYY-MM-DD HH:MM:SS` into the `timestamp` field.                       |
+| **Extract Domain Names from URLs**  | `rex field=_raw "https?://(?<domain>[^/]+)"`                                                        | Captures the domain portion of a URL into the `domain` field.                                             |
+| **Extract Query Parameters**        | `rex field=_raw "user=(?<user>[^&]+)&action=(?<action>[^&]+)"`                                       | Extracts the `user` and `action` fields from query parameters like `user=admin&action=login`.             |
+| **Extract File Extensions**         | `rex field=_raw "(?<extension>\.[a-zA-Z0-9]+)$"`                                                    | Captures the file extension (e.g., `.html`, `.jpg`) at the end of a string into the `extension` field.     |
+| **Extract Words**                   | `rex field=_raw "(?<word>\b[a-zA-Z]+\b)"`                                                           | Extracts individual words containing only alphabetic characters into the `word` field.                    |
+| **Extract Numbers**                 | `rex field=_raw "(?<number>\b\d+\b)"`                                                               | Extracts whole numbers from the text into the `number` field.                                             |
+| **Extract Case-Insensitive Password** | `rex field=_raw "(?i)passwd=(?<password>[a-zA-Z]{6})"`                                             | Extracts a case-insensitive password of exactly 6 alphabetic characters into the `password` field.        |
+
+> **Note:** Replace `field=<fieldname>` with your desired field (or leave it out to apply to `_raw` by default). Always test your regex to ensure proper results.
